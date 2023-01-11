@@ -1,0 +1,134 @@
+/* PRE REQUISITES */
+:root{
+    --white: #eee;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.section-hr {
+    border-color: var(--eight) !important;
+    width: 30%;
+}
+
+/* NAVBAR */
+#fp-nav ul li a span {
+    background-color: var(--five) !important;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+}
+
+#fp-nav {
+    z-index: 1 !important;
+}
+
+#fp-nav ul li a.active span {
+    background-color: var(--five) !important;
+}
+
+#fp-nav ul li .fp-tooltip {
+    color: var(--five) !important;
+    font-family: 'Poppins', sans-serif;
+}
+
+#fp-nav ul li:nth-child(6) {
+    display: none;
+}
+
+/* HOME */
+#home {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow-x: hidden;
+    height: 100%;
+}
+
+#home::before {
+    position: absolute;
+    background-size: cover;
+    background-position: bottom;
+    background-image: url(images/E.png);
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    content: "";
+}
+
+#home h1 {
+    font-size: 90px;
+    font-family: 'Lato', sans-serif;
+    color: var(--white);
+    text-align: center;
+    
+}
+
+@media screen and (max-width: 500px) {
+    #home h1 {
+        font-size: 50px;
+    }
+}
+
+#home h2 {
+    font-size: 30px;
+    font-family: 'Lato', sans-serif;
+    color: var(--white);
+    text-align: center;
+}
+
+/*ABOUT*/
+.about {
+    background-color: var(--two);
+}
+
+.about h1 {
+    color: var(--one);
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    padding: 2%;
+}
+
+.line {
+    border-right: 2px solid var(--eight);
+}
+
+.about p {
+    color: var(--seven);
+    font-size: 20px;
+    padding: 2%;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.icon {
+    font-size: 170px;
+    color: #fff;
+    text-align: center;
+    padding: 2%;
+    padding-bottom: 20px;
+    text-shadow: var(--pink);
+}
+
+.icon2 {
+    font-size: 170px;
+    color: #fff;
+    text-align: center;
+    padding: 2%;
+    padding-bottom: 20px;
+    text-shadow: var(--orange);
+}
+
+.icon3 {
+    font-size: 170px;
+    color: #fff;
+    text-align: center;
+    padding: 2%;
+    padding-bottom: 20px;
+    text-shadow: var(--blue);
+}
+
+.about img{
+    width: 100%;
+}

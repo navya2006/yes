@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>
+            Aryawn
+        </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="main.css">
+        <script src="https://cdn.tailwindcss.com"></script>
+        
+        <script src="fontawesome.js"></script>
+        <script>
+            tailwind.config = {
+              theme: {
+                extend: {
+                  colors: {
+                    clifford: '#da373d',
+                  },
+                  backgroundImage: {
+                  'hero-bg': "url('images/herobg.png')",
+                 }
+                }
+              },
+              plugins: [
+                  require('tailwind-scrollbar')
+              ]
+            }
+          </script>
+    </head>
+    <body>
+        <main class="h-screen snap-y snap-mandatory overflow-y-scroll z-0 scrollbar-thin scrollbar-track-[#3B3C40]/20 scrollbar-thumb-[#A6775B]/80 bg-[#000]">
+            <nav class='sticky top-0 p-5 flex items-start justify-between max-w-7xl mx-auto z-20'>
+                <div class="flex flex-row items-center">
+                    <img src="">
+                </div>
+
+                <div class="flex flex-row items-center text-[#eee] gap-x-[20px]">
+                <a href="#home">Home</a>
+                <a href="videos.html">Gallery</a>
+                <a href="notes.html">Notes</a>
+                </div>
+            </nav>
+
+            <section class="snap-center">
+                <div class="h-screen flex flex-col justify-center content-center text-center overflow-hidden bg-hero-bg bg-cover bg-center">
+                  <div class="h-screen w-screen relative flex flex-col justify-center items-center bg-[#000000]/70 z-10">
+                    <div class="z-20 space-y-[20px]">
+                      <h1 class="text-5xl lg:text-6xl font-semibold px-10 text-white">HAPPY BIRTHDAY <br> ARYAWNNN</h1>
+                      <h3 class="text-xl lg:text-2xl tracking-widest uppercase text-[#eee]">
+                        <span class="txt-type border border-transparent border-r-[#eee]/40 pr-[2px]" data-wait="3000" data-words='["Cutie", "Gorgeous", "I Love You"]'>&nbsp;</span>
+                      </h3>
+                    </div>
+                    <div class="absolute bottom-5 text-white animate-bounce">
+                      <a href="#about">
+                        <p>Scroll</p>
+                        <i class="fas fa-chevron-down"></i>  
+                      </a>
+                    </div>
+                  </div>
+                </div>
+            </section>
+
+            <section class="snap-center" id="about">
+              <div class="relative h-screen flex flex-col justify-center content-center text-center overflow-hidden bg-[#000] text-white space-y-10">
+                <div class='w-full absolute top-[27%] bg-[#aaa]/10 left-0 h-[400px] -skew-y-12 z-0'></div>
+                <h1 class="text-2xl uppercase text-gray-400 tracking-widest z-10">For My Fcking Perfect Boyfriend</h1>
+                <p class="text-3xl max-w-4xl mx-auto z-10">I wish you a very HAPPY BIRTHDAY my love. <br> 
+                and since you have it all figured out Mr. Holmes :D <br>
+              I think it's time you find out what actually i was up to <br> P.s. I love you so much cutie <3</p>
+                <div class="z-10"><a href="videos.html" class="w-auto px-8 py-2 text-l border border-white rounded-2xl uppercase tracking-widest cursor-pointer hover:text-black hover:bg-white transition transition-400 ease-in-out">Find Out</a></div>
+              </div>
+            </section>
+        </main>
+
+
+        <script src="index.js" async defer></script>
+        <script src="fontawesome.js"></script>
+    </body>
+</html>
